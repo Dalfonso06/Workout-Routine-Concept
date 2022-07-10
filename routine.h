@@ -12,11 +12,22 @@ typedef struct node{
 	workout val;
 }node;
 
+// Each category holds a linked list of workouts
 typedef struct {
-	char week[7];
+	char* name;
+	node* head;
+	int size;
+}category;
+
+typedef struct {
+	int week[7];
+	category cat;
 }routine;
 
 #endif
 
 routine createRoutine();
-void displayRoutine();
+void displayRoutine(routine* r);
+
+category createCat(char* cat);
+void printCat(category* cat);
