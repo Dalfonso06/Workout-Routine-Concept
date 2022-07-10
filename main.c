@@ -3,5 +3,8 @@
 
 int main(int argc, char** argv) {
 
+	routine myRout = createRoutine();
+	displayRoutine(&myRout);
+
 	return 0;
 }
