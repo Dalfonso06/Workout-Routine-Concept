@@ -3,11 +3,11 @@
 
 int main(int argc, char** argv) {
 
-	routine myRout = createRoutine();
-	displayRoutine(&myRout);
+	routine myRout = create_routine();
+	display_routine(&myRout);
 
-	category cat = createCat("Push");
-	printCat(&cat);
+	category cat = create_cat("Push");
+	print_cat(&cat);
 
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #ifndef ROUTINE_H
 #define ROUTINE_H
@@ -21,13 +22,14 @@ typedef struct {
 
 typedef struct {
 	int week[7];
-	category cat;
+	category cat[7];
 }routine;
 
 #endif
 
-routine createRoutine();
-void displayRoutine(routine* r);
+routine create_routine();
+void display_routine(routine* r);
+void define_routine(routine* r);
 
-category createCat(char* cat);
-void printCat(category* cat);
+category create_cat(char* cat);
+void print_cat(category* cat);
