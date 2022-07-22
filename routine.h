@@ -22,14 +22,15 @@ typedef struct {
 
 typedef struct {
 	int week[7];
-	category cat[7];
+	category split[5];
+	category schedule[7];
 }routine;
 
 #endif
 
 routine create_routine();
 void display_routine(routine* r);
-void define_routine(routine* r);
 
 category create_cat(char* cat);
 void print_cat(category* cat);
+void add_workout(category* cat, char* workout);
